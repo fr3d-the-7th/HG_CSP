@@ -1,19 +1,42 @@
 # HG  Variables Practice
 
-name = input
+name = "Fred"
 
-small_number
+small_number = 6
 
-big_number = 
+big_number = 453
 
-breakfeast = 
+breakfeast = "a doughnut"
 
+color = "aqua"
+
+school = "StanFord University"
+
+year = 2026
+
+eye = "brown"
+
+age = 56
+
+subject = "STEM"
 print(name)
 
-print()
+print(small_number)
 
-print()
+print(big_number)
 
-print()
+print(breakfeast)
 
-print()
+print(color)
+
+print(school)
+
+print(year)
+
+
+print(eye)
+
+print(age)
+
+print(subject)
+

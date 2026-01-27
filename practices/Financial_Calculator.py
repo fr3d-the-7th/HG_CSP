@@ -10,6 +10,8 @@ food = float(input("what is your monthly grocery budget?: $"))
 
 vroom = float(input("what is your monthly transportation cost?: $"))
 
+save = float(input("How much money are you putting into savings monthly?: $"))
+
 extra = income - (home + util + food + vroom)
 
 
@@ -21,5 +23,7 @@ print("Since you groceries buget is $" + str(food) + ", it consumes " + str(roun
 
 print("Since you transportation cost is $" + str(vroom) + ", it consumes " + str(round(vroom/income*100)) + "% of your income.")
 
-print("You have $" + str(extra) + "left after all your normal expenses. It is highly recomended to put it into savings or try to pay off any debts.")
+print("Since you are putting $" + str(save) + " into a savings account, you are setting aside " + str(round(save/income*100)) + "% of your income for your savings.")
+
+print("You have $" + str(extra) + " left after all your normal expenses. It is highly recomended to try to pay off any debts or enjoy life with it.")
 

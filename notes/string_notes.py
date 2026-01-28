@@ -12,5 +12,5 @@ new_word = input("what is the new word?: ").strip().lower()
 
 start = sentence.find(word)
 sentence = sentence.replace(word, new_word)
-print(name + "! Did you know? " sentence)
+print(name + "! Did you know? ", sentence)
 

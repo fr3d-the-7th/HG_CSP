@@ -1,7 +1,7 @@
 import random #
 # HG Loops Notes
 
-"""
+
 
 start = 0 
 
@@ -28,7 +28,7 @@ while True:
     elif guess <number:
         print("Guess higher")
     else:
-        print("Guess lower")"""
+        print("Guess lower")
 # HG lists
 
 number = [1,5466,354643655436,54643,67,453636,43]
@@ -46,3 +46,7 @@ for name in names:
     print(f"Hello {name}")
 for number in numbers:
     print(f"{number}- 10 = {number-10}")
+
+#iteration => repitition
+for i in range(20):
+    print(f"My code has iterated [i] times.")

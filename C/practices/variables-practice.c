@@ -1,16 +1,18 @@
+//HG variables practice
 #include <stdio.h>
 
+
 int main(){
-    char human[] = "Fred";
+    char human[] = "fred";
     int lucky = 6;
-    float gpa = 3.4;
+    char gpa[] = "3.4";
     char nom[] = "pankakes";
     char color[] = "barf green";
     char jail[] = "Frankfort High";
-    int year = 2016;
+    char year[] = "2016";
     char eye_color[] = "brown";
-    int oldyness_rating = 16;
-    char period[] = "P.E.";
-  printf("%s, It's %i, I highly advise you to quit your behavior; I know who you are.\n Your eyes are %s. You are %d years old. Your favorite color is %s, and your lucky number is %i.\n It's even your jersy number at %s. Your GPA is %d and your favorite class is %s. I even know you ate %s for breakfeat this morning. Quit your actions now.",human, year, eye_color, oldyness_rating, color, lucky, jail, gpa, period, nom);
-  return 0;
+    int oldyness_percentage = 9;
+    char period[] = "recess";
+
+  printf("%s, It's %d, highly advise you to quit your behavior; I know who you are.\n Your eyes are %s. You are %i years old. Your favorite color is %s, and your lucky number is %i. It's even your jersy number at %s. Your GPA is %s and favorite period is %s. You ate %s this morning.", human, year, eye_color, oldyness_percentage, color, lucky, jail, gpa, period, nom);
 }

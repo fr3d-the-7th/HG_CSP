@@ -1,0 +1,12 @@
+//
+#include<stdio.h>
+#include <math.h>//for math stuff/calculations
+#include <string.h>//for string stuff
+
+int main(){
+
+
+
+
+return 0;
+}

@@ -5,15 +5,30 @@
 
 int main(){
 
-char d1[30] = input("tell me a random day of the week: ");
-char a1[30] = input("tell me a random adjective: ");
-char n1[30] = input("tell me a random noun: ");
-char v1[30] = input("tell me a random verb ending in -ing: ");
-char n2[30] = input("tell me a another random noun: ");
+    char d1[30];
+    char a1[30];
+    char n1[30];
+    char v1[30];
+    char n2[30];
 
-printf("tell me a random day of the week: ");
-scanf("%s", &d1);
-print("%s",)
+    printf("tell me a random day: \n");
+    scanf("%s", &d1);
+
+
+    printf("tell me a random adjective: \n");
+    scanf("%s", &a1);
+
+
+    printf("tell me a random noun: \n");
+    scanf("%s", &n1);
+
+
+    printf("tell me a random verb ending in -ing: \n");
+    scanf("%s", &v1);
+
+
+    printf("tell me a another random noun: \n");
+    scanf("%s", &n2);
 
 
 
@@ -22,6 +37,6 @@ print("%s",)
     strcat(a1, n1);
 
 
-printf("I was late on %s because a %s %s was %s on top of my %s.");
-return 0;
+    printf("I was late on %s because a %s was %s on my %s.\n", d1, a1, v1, n2);
+    return 0;
 }

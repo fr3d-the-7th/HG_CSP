@@ -7,7 +7,7 @@
 int main(){
 
     int grade = 97;
-    bool isProgramming = true
+    bool isProgramming = true;
     if (grade > 90){
         printf("Your grade is %d percent, That is an A!\n", grade);
     }else if (grade > 80){

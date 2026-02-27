@@ -10,7 +10,7 @@ int main(){
     printf("Subject:%s\n Fruit:%s\n", subject, fruit);
 
     printf("What is your favorite book: ");
-    //scanf("%s", &book);
+    scanf("%s", &book);
     //
     fgets(book, sizeof(book), stdin);
     printf("your favorite book is %s. That is a really good book!\n", book);

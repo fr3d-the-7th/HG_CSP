@@ -9,10 +9,18 @@
 int main(){
     //example 1
     int grades[] = {65,81,9,78,98,97,90,78};
-    printf("%d\n", grades[2]); //sigle item from the array based on index # (0 is an index #)
+    printf("%d\n", grades[2]); //single item from the array based on index # (0 is an index #)
     grades[2] = 64;
     printf("%d\n", grades[2]);
     grades[4] = 0;
 
+
+    //example 2
+float distance[] = {72.5, 46.3, 464.4, 546.5, 657.5};
+
+
+    //example 3
+    char names[][289] = {"Alex", "Bob", "Joe", "Steve"};
+    printf("%s\n", names[5]);
 return 0;
 }

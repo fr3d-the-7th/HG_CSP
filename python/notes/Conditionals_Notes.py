@@ -1,5 +1,4 @@
 
-"""
 number = 1000
 
 
@@ -16,7 +15,7 @@ else:
 
 
 print("this is the end of the code")
-"""
+
 
 
 name = input("what is your name?: ").strip().capitalize()

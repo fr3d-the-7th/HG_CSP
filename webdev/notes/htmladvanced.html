@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang ="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk:MORF@24&display=swap" rel="stylesheet">
     <title>Notes on advanced HTML</title>
     <meta charset= "UTF-8">
         <!--embedded style, good practice, go inside the head tag -->
         <style>
-            *{
+            body{
+
                 background-color: rgb(0, 255, 255);
+                font-family: cursive;
             }
             p{
                 background-color: rgba(255, 228, 196, 0.589);
@@ -16,7 +21,7 @@
                 color: cornflowerblue;
             }
             .section-2{
-                font-family: papyrus, fantasy;
+                font-family: 'times new roman', fantasy;
                 border: 3px solid whitesmoke;
             }
             .odd{
@@ -25,10 +30,41 @@
                 color: #0B6623;
             }
             h1{
-                font-size:50px;
+                 font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 24,
+    "SHLN" 50;
             }
             img{
-                width: 100px;
+                width: 250px;
+            }
+            .special{
+                font-size: 30px;
+                color: red;
+            }
+            #box{
+                margin:5px;
+                padding: 5px;
+            }
+        #nana{
+        color: yellow;
+        }
+            .box-wrapper{
+                display: block;
+                margin: auto;
+                width: 50%;
+            }
+            .lists-wrapper{
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+            #img-wrapper{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
             }
         </style>
 
@@ -36,11 +72,17 @@
 <body>
     <h1>Advanced HTML</h1>
     <!--inline style, it is bad syntax-->
-    <div style="background-color: blueviolet; height:100px; width:100px;">this is in a div</div>
+    <div class="boxwrapper">
+    <div id="box">
+        <p>this is in a div</p>
+    </div>
+</div>
+<div id="lists-wrapper">
+
     <div id= "ordered">
-    <p>This is how you make an ordered list</p>
+    <p>This is how <span class="special">you make </span> an ordered list</p>
     <ol>
-        <li>bannana</li>
+        <li>ba<span id = "nana">nnana</span></li>
         <li>strawberry</li>
         <li>apple</li>
     </ol>
@@ -52,8 +94,23 @@
         <li>pea</li>
     </ul>
     </div>
-    <a href="https://www.w3schools.com/" target="_blank">W3schools unordered lists</a>
+    </div>
+        <a href="https://www.w3schools.com/" target="_blank">W3schools unordered lists</a>
+    <div id="img-wrapper">
+
     <img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+
+    <img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+<img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+<img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+<img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+<img src="https://images.squarespace-cdn.com/content/v1/63c60d44c98af85334537583/644359f9-c213-4d77-bdb0-b78b7f8424f3/Mount_Timpanogos_at_sunset.jpg" alt="Mount Timpanogos" >
+</div>
+
+
+
+
+
 </body>
 
 

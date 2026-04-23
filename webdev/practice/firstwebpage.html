@@ -49,33 +49,68 @@
             margin: 2px;
         }
         #toy{
-            height: 300px;
+            width: 300px;
             
             margin: 2px;
         }
         #merica{
-            height: 300px;
+            width: 300px;
             margin: 10px;
 
         }
         #bench{
-            height: 500px;
+            width: 300px;
             
             margin: 2px;
 
         }
+        #done{
+            width: 300px;
+            
+            margin: 2px;
+
+        }
+        #memes{
+            width: 300px;
+            
+            margin: 2px;
+
+        }
+        
         #links{
             color: rgb(206, 2, 2);
+            display: none;
         }
         a{
             color:rgb(206, 2, 2);
         }
-
-
-
-
-
     </style>
+    <script>
+        let img_count = 0
+            let imgs = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFhqToejKvoEMy2S7QyHxcWkjoLWoT0QGJPg&s","https://media.makeameme.org/created/paperwork-paperwork-everywhere-edb6c69d32.jpg", "https://i.redd.it/dcoqbeamghdf1.png", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjxDZ9wajgfrC40xVXr4gPGAD-SiJxNY-DA&s" ]
+
+        function show(){
+            if(document.getElementById("links").style.display == "block"){
+                document.getElementById("links").style.display = "none"
+            }else{
+                document.getElementById("links").style.display = "block"
+            }
+    }
+
+ function change(){
+                if(img_count >= imgs.length -1 ){
+                    img_count = 0
+                }else{
+                    img_count += 1
+                }
+                document.getElementById("memes").src = imgs[img_count]
+            }
+
+
+
+    </script>
+
+
 
 </head>
 <body>
@@ -104,24 +139,35 @@
         <li><b>Ask around! Find a problem.</b> find someone who wants your help. Government offices are a great source but are slow. Find someone local</li>
         <li><b>Have multiple ideas.</b> The first idea might not work out. The first 7 light not either (speaking from experience). Don't be dead set on a project. </li>
     </ul>
+
+    <img id= "bench" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ZZIhZbO0j6WOBk6Qfsl9P3R9b161Sv1P7g&s" alt="figuring out a project be like...">
+    
+    <button onclick="show()">resources for eagle project ideas</button>
+
     <div id= "links">
     <p><u>Some recources for ideas:</u></p>
     <a href="https://nesa.org/resources/trail-to-eagle/project-idea-generator/ " target="_blank">project genorator based on intrests</a>
     <a href="https://natureintoaction.com/2025/03/07/eagle-scout-projects-in-the-parks/" target="_blank">200+ Eagle Scout Projects in the Parks</a>
     <a href="https://scoutsmarts.com/eagle-scout-project-ideas/" target="_blank">Scout Smarts</a>
     <a href="https://eagleprojects.scoutlife.org/" target="_blank">Scout Life (Magazine) Eagle progect Showcase</a>
-    <img id= "bench" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ZZIhZbO0j6WOBk6Qfsl9P3R9b161Sv1P7g&s" alt="figuring out a project be like...">
-    </div>
+    <img id= "done" src="https://images3.memedroid.com/images/UPLOADED727/68c6d1a087b6f.jpeg" alt="The project will never meet expectations">
+    
+</div>
     </div>
 
 
     <div id= "motivation">
     <h2>Motivational Issues</h2>
-     <img id= "toy" src="https://www.mosio.com/wp-content/uploads/2016/04/paperwork_toystory.jpg" alt="Paperwork, paperwork everywhere" >
+    <img id="memes" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhjxDZ9wajgfrC40xVXr4gPGAD-SiJxNY-DA&s" onmouseover="change()">
     <p>"Just start now!" "Get it done!" "Schedule a time!" Sound familiar? We know they are right but seriously PAPERWORK IS BORING! Here's how to get the ball rolling and keep it rolling:</p>
     <p>1: <b>get a buddy. </b> Things are always better with friends right? When working on your eagle project find another scout to do it <i>with</i> you. Be eachothers accountability partner and if possible sit down together and do your paperwork together. Just having them there as they work on their own will make it easier.</p>
     <p> 2: <b>Seriously, set a schedule.</b> You know there is at least one hour a week you could spare. USE IT. A set aside time means the project isn't getting set aside. Don't wait till the deadline, wait till your set aside time. You'll have to do meetings and the actual project outside of that time but other than that it is incredable how much wright it takes off your shoulders.</p>
     <p>3: <b>Celabrate the milestones.</b> At NLYT it is taught to celabrate the milestone to keep the teams modivation high. Now I swear by that sylubus only because it works. <u>Bites out of an elephant are still bites</u></p>
+    
+
+
+
+
     </div>
     </div>
 </body>

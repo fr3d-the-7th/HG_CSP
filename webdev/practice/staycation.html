@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <title>Stargazer's Favorite Staycation: Goblin Valley</title>
+    <meta charset= "UTF-8">
+<style>
+            body{
+
+                background-color: rgb(141, 62, 25);
+                color: white;
+                font-family: cursive;
+            }
+            h1{
+                
+                font-family: "Rubik Dirt", system-ui;
+                font-weight: 400;
+                 font-style: normal;
+                text-align: center;
+                
+            }
+</style>
+<script>
+        let img_count = 0
+            let imgs1 = ["https://www.visitutah.com/azure/cmsroot/visitutah/media/site-assets/things%20to%20do/stargazing/dark-sky_south_hoodoos_moonflower_zajac-marcin_2023_goblin-valley.jpg", "https://i.redd.it/z86nkq2efe391.jpg", "https://stateparks.utah.gov/wp-content/uploads/sites/13/2018/06/Copy-of-gob-sister.jpg", "https://visitfourcorners.com/wp-content/uploads/2025/12/Goblin-Valley-State-Park-Utah-Sunset.png" ]
+
+ function change1(){
+                if(img_count >= imgs.length -1 ){
+                    img_count = 0
+                }else{
+                    img_count += 1
+                }
+                document.getElementById("wealthy").src = imgs[img_count]
+            }
+
+
+
+    </script>
+
+
+
+</head>
+<body>
+    <h1>Stargazer's Favorite Staycation: Goblin Valley</h1>
+    <p>Goblin Valley state park, located in Emery County, is one of Utah's many state parks. Located 126 miles away (just over 3 hours) from Provo lies Goblin valley, a mini Bryce Caynon. It got is name from the rock formations that look like short versions of  Bryce Caynon's dramatic spires. from a distance they looks like a cute colony of goblins or mushrooms made of rock. But why would you want to come? Well.....</p>
+ <ul style="list-style-type: circle;">
+        <li>They are an internatinally recognized dark sky park (hello stargazing on steroids) </li>
+        <li>Great hikes! They even have some slot cayons.</li>
+        <li>Seriosly how aren't these little guys cute?</li>
+    </ul>
+<img id="wealthy" src="https://visitfourcorners.com/wp-content/uploads/2025/12/Goblin-Valley-State-Park-Utah-Sunset.png" onmouseover="change1()">
+
+<img src="https://static.wixstatic.com/media/nsplsh_03c73f8e5f0e41c3bb84d67c6a09e93a~mv2.jpg/v1/fill/w_640,h_610,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_03c73f8e5f0e41c3bb84d67c6a09e93a~mv2.jpg" alt="goblins" >
+<img src="https://i.redd.it/z86nkq2efe391.jpg" alt="very wealthy goblins at night" >
+</body>
+   
+
+
+</html>

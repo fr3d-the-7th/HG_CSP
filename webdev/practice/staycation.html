@@ -11,7 +11,7 @@
 
                 background-color: rgb(141, 62, 25);
                 color: white;
-                font-family: cursive;
+                font-family: cursive, sans-serif;
             }
             
                 
@@ -19,7 +19,7 @@
             display: flex;
             justify-content: center;
              display: grid;
-                grid-template-rows:  1fr 1fr;
+                grid-template-rows:  1% 29% 70%;
             
         }
         #words{
@@ -27,8 +27,9 @@
             margin: 2px;
         }
         #images{
-            padding: 2px;
-            margin: 2px;
+            padding: 40px;
+            margin: 10px;
+            align-items: center;
         }
         #words{
             display: flex;
@@ -40,10 +41,12 @@
 
         h1{
                 
-                font-family: "Rubik Dirt", system-ui;
+                font-family: "Rubik Dirt", sans-serif, cursive;
                 font-weight: 400;
                  font-style: normal;
+                 font-size: 50px;
                 text-align: center;
+                margin: 2px;
 
         }
 
@@ -62,6 +65,41 @@
             width: 300px;
             
             margin: 2px;
+            
+        }
+        #weave{
+            width: 300px;
+            
+            margin: 2px;
+            
+        }
+        #climb{
+            width: 300px;
+            
+            margin: 2px;
+            
+        }
+        #rock{
+            width: 300px;
+            
+            margin: 2px;
+            
+        }
+        #map{
+            width: 300px;
+            
+            margin: 2px;
+            
+        }
+        #tower{
+            width: 300px;
+            
+            margin: 2px;
+            
+        }
+        #pics{
+            color: rgb(206, 2, 2);
+            display: none;
         }
 </style>
 <script>
@@ -77,7 +115,13 @@
                 document.getElementById("wealthy").src = imgs[img_count]
             }
 
-
+function show(){
+            if(document.getElementById("pics").style.display == "block"){
+                document.getElementById("pics").style.display = "none"
+            }else{
+                document.getElementById("pics").style.display = "block"
+            }
+        }
 
     </script>
 
@@ -86,8 +130,11 @@
 </head>
 <body>
     <div id="everything">
-    <div id="words">
+    
+        <div id="title"></div>
     <h1>Stargazer's Favorite Staycation: Goblin Valley</h1>
+    </div>
+    <div id="words">
     <p>Goblin Valley state park, located in Emery County, is one of Utah's many state parks. Located 126 miles away (just over 3 hours) from Provo lies Goblin valley, a mini Bryce Caynon. It got is name from the rock formations that look like short versions of  Bryce Caynon's dramatic spires. from a distance they looks like a cute colony of goblins or mushrooms made of rock. But why would you want to come? Well.....</p>
  <ul style="list-style-type: circle;">
         <li>They are an internatinally recognized dark sky park (hello stargazing on steroids) </li>
@@ -103,6 +150,15 @@
 <img id="goblins" src="https://static.wixstatic.com/media/nsplsh_03c73f8e5f0e41c3bb84d67c6a09e93a~mv2.jpg/v1/fill/w_640,h_610,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_03c73f8e5f0e41c3bb84d67c6a09e93a~mv2.jpg" alt="goblins">
 
 <img id="slot" src="https://wilderness.net/images/NWPS/lib/thumbID250/4559.jpg" alt="slot" >
+<button onclick="show()">more pictures</button>
+
+<div id= "pics">
+<img id="weave" src="https://ogden_images.s3.amazonaws.com/www.heraldextra.com/images/2010/05/25042035/771ab92d9a3cdd12c23d7c30577a3856-1200x783.jpg" alt="person in Little Wild Horse Canyon">
+<img id="climb" src="https://www.utahsadventurefamily.com/wp-content/uploads/2013/07/Little-Wild-Horse-Canyon-9-600x400.jpg" alt="sometimes you have to climb">
+
+<img id="rock" src="https://wanderlustphotosblog.com/wp-content/uploads/2022/04/Goblin-Valley-State-Park-6815-1024x683.jpg" alt="rocks in Goblin Valley">
+<img id="map" src="https://www.mattandkaren.com/wp-content/uploads/2025/06/Goblin-Valley-Full-Page-Map-PNG-791x1024.png" alt="map of Goblin Valley">
+<img id="tower" src="https://www.hytreks.com/wp-content/uploads/2025/07/gallery_goblin_val_4.jpeg" alt="you are so little!">
 </div>
 </div>
 
